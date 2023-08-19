@@ -3,10 +3,15 @@ class SearchInput extends React.Component{
     render()
     {
         return(
-            <div className="search-input">
+            <div className="ui segment">
                 
-                <form>
-                      <input type="text"/>
+                <form className="ui form">
+                    <div className="field">
+                        <div className="ui massive icon input">
+                      <input type="text" placeholder="search..."/>
+                      <i className="search icon"></i>
+                      </div>
+                      </div>
                     
                     </form>
                 
