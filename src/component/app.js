@@ -8,8 +8,10 @@ class App extends React.Component
         super(props);
         this.onSearchSubmit=this.onSearchSubmit.bind(this)
     }
-    onSearchSubmit(entry){//creating call back function
-        console.log(entry);
+   async onSearchSubmit(entry){//creating call back function
+        
+      const response= await axios.get(`https://pixabay.com/api/?key=38951609-f57c19e63bbf7fc1eb95c3495&q=${entry}&image_type=photo`)
+      console.log(response.data.hits);
     }
         
     render(){
