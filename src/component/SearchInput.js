@@ -9,7 +9,7 @@ class SearchInput extends React.Component{
    onFormSubmit=(event)=>//power of arrow function.automatically check the state entry is always show the value of search
    {
     event.preventDefault();// to stop refreshing page by click enter
-    console.log(this.state.entry);
+   this.props.onSearchSubmit(this.state.entry);
    }
     render()
     {
